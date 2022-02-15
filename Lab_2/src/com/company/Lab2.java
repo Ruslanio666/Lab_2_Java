@@ -2,19 +2,28 @@ package com.company;
 
 import static java.lang.Math.round;
 import static java.lang.Math.sqrt;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Lab2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        double point1x = Double.parseDouble(args[0]);
-        double point1y = Double.parseDouble(args[1]);
-        double point1z = Double.parseDouble(args[2]);
-        double point2x = Double.parseDouble(args[3]);
-        double point2y = Double.parseDouble(args[4]);
-        double point2z = Double.parseDouble(args[5]);
-        double point3x = Double.parseDouble(args[6]);
-        double point3y = Double.parseDouble(args[7]);
-        double point3z = Double.parseDouble(args[8]);
+    System.out.println("Введите значения координат первой точки x y z");
+    double point1x = Double.parseDouble(br.readLine());
+    double point1y = Double.parseDouble(br.readLine());
+    double point1z = Double.parseDouble(br.readLine());
+
+    System.out.println("Введите значения координат второй точки x y z");
+    double point2x = Double.parseDouble(br.readLine());
+    double point2y = Double.parseDouble(br.readLine());
+    double point2z = Double.parseDouble(br.readLine());
+
+    System.out.println("Введите значения координат третей точки x y z");
+    double point3x = Double.parseDouble(br.readLine());
+    double point3y = Double.parseDouble(br.readLine());
+    double point3z = Double.parseDouble(br.readLine());
 
 
     Point_3d point_1 = new Point_3d( point1x, point1y, point1z);
